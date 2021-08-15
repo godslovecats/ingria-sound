@@ -1,0 +1,63 @@
+@import "normalize";
+@import "font";
+
+html, body {
+  color: $font;
+  background: $gold-light;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 17px;
+  line-height: 1.48;
+  font-weight: normal;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+body {
+  &.overflow-hidden {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.is-title {
+  @include title;
+}
+.is-text {
+@include text;
+  &--bold {
+    font-weight: 600;
+  }
+  &--gray {
+    color: $gray;
+  }
+}
+.is-subtitle {
+@include subtitle;
+}
+.is-link {
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: $transition;
+  &--white {
+    color: $white;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &--gold {
+    color: $gold;
+    &:hover {
+      color: $gold-hover;
+    }
+  }
+}
