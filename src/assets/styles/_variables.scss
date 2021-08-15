@@ -1,33 +1,12 @@
 // COLORS
-$font: #333333;
 
-$gold: #BB7550;
-$gold-hover: #A9603A;
-$gold-dark: #2F231E;
-$gold-hover: #A9603A;
-$gold-light: #F9F7F6;
-$gold-disabled: lighten($gold, 30%);
-$gold-image-bg: lighten($gold, 40%);
-
-$gray: #B0B0B0;
-$red: #F44336;
-$black: #020202;
 $white: #ffffff;
+$gray: #B0B0B0;
+$gray-light: #f5f5f5;
+$gray-dark: #212121;
+$black: #020202;
 
-// device sizes
-$phone-width: 360px;
-$tablet-width: 768px;
-$desktop-width: 1440px;
-$desktop-lg-width: 1920px;
+$purple: #7b1fa2;
 
-// grid
-$prefix: '.v';
-$row-prefix: '#{$prefix}-row';
-$col-prefix: '#{$prefix}-col';
-$flex-row-prefix: '#{$row-prefix}-flex';
-$flex-justifies: ('start', 'end', 'center', 'space-around', 'space-between');
-$flex-aligns: ('top':'flex-start', 'middle':'center', 'bottom':'flex-end');
-$flex-wrap: ('wrap', 'nowrap');
-$grid-col: 24;
 
 $transition: all 300ms cubic-bezier(0.545, 0.345, 0.020, 1.000);
