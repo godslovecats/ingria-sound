@@ -1,3 +1,15 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  css: {
+    //sourceMap: true,
+    extract: false,
+    loaderOptions: {
+      sass: {
+        prependData: `
+        @import "@/assets/styles/_variables.scss";
+        @import "@/assets/styles/_mixins.scss";
+        `,
+      },
+    },
+  },
 }
